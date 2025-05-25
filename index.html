@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para ti</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fdf6f0;
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background-color: #d96c6c;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .btn:hover {
+      background-color: #c35656;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 600px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      display: none;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #d96c6c;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .firma {
+      font-style: italic;
+      color: #a67c7c;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn" id="btnMostrar" onclick="mostrarCarta()">Leer carta</button>
+
+  <div class="container" id="carta">
+    <img src="image/IMG_0403.jpeg" alt="Nuestra foto" />
+    <h1>Para ti, cielo..</h1>
+    <p>
+      Desde el primer momento supe que eras alguien especial. Tus palabras, tus gestos, tus risas... hacen que mis días sean más livianos, y mis noches más tranquilas aunque a veces queramos matarnos haha. A tu lado he descubierto que la verdadera paz no está en el silencio, sino en la presencia de alguien que te hace sentir en casa incluso en medio del caos.
+
+      Gracias por existir, por quedarte, por ser tú. Prometo cuidarte, escucharte, apoyarte y amarte con todo lo que soy. Esto que siento por ti no cabe en un mensaje, pero hoy quiero dejarte estas palabras como un recordatorio de lo mucho que significas para mí.<br><br>
+      Te pienso, te valoro y te quiero con cada parte de mí.
+      Feliz día para ti futura madrecita preciosa!
+    </p>
+    <p class="firma">Con todo mi amor,<br>Darlis 💌</p>
+  </div>
+
+  <script>
+    function mostrarCarta() {
+      document.getElementById('carta').style.display = 'block';
+      document.getElementById('btnMostrar').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
